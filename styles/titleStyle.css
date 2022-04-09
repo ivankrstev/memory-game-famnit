@@ -1,0 +1,230 @@
+/* Import and set the Local Google Font */
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("./font/PressStart2P-Regular.ttf");
+}
+/* Setting height for the background to be on the whole page */
+html {
+  height: 100%;
+}
+body {
+  font-family: "Press Start 2P";
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background-repeat: no-repeat;
+}
+div {
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gameLink {
+  display: inline-flex;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.5em;
+}
+#instructionsLink {
+  margin: 3em 0;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.el {
+  background-color: transparent !important;
+  color: red;
+  position: relative;
+}
+.el-1 {
+  animation: bounce 1.12s ease infinite;
+  -webkit-animation: bounce 1.12s ease infinite;
+}
+.el-2 {
+  margin-right: 0.65em;
+  animation: bounce 1.12s ease infinite 0.08s;
+  -webkit-animation: bounce 1.12s ease infinite 0.08s;
+}
+.el-3 {
+  animation: bounce 1.12s ease infinite 0.16s;
+  -webkit-animation: bounce 1.12s ease infinite 0.16s;
+}
+.el-4 {
+  margin-right: 0.65em;
+  animation: bounce 1.12s ease infinite 0.24s;
+  -webkit-animation: bounce 1.12s ease infinite 0.24s;
+}
+.el-5 {
+  animation: bounce 1.12s ease infinite 0.32s;
+  -webkit-animation: bounce 1.12s ease infinite 0.32s;
+}
+.el-6 {
+  animation: bounce 1.12s ease infinite 0.4s;
+  -webkit-animation: bounce 1.12s ease infinite 0.4s;
+}
+.el-7 {
+  animation: bounce 1.12s ease infinite 0.48s;
+  -webkit-animation: bounce 1.12s ease infinite 0.48s;
+}
+.el-8 {
+  animation: bounce 1.12s ease infinite 0.56s;
+  -webkit-animation: bounce 1.12s ease infinite 0.56s;
+}
+.el-9 {
+  animation: bounce 1.12s ease infinite 0.64s;
+  -webkit-animation: bounce 1.12s ease infinite 0.64s;
+}
+.el-10 {
+  margin-right: 0.65em;
+  animation: bounce 1.12s ease infinite 0.72s;
+  -webkit-animation: bounce 1.12s ease infinite 0.72s;
+}
+.el-11 {
+  animation: bounce 1.12s ease infinite 0.8s;
+  -webkit-animation: bounce 1.12s ease infinite 0.8s;
+}
+.el-12 {
+  animation: bounce 1.12s ease infinite 0.88s;
+  -webkit-animation: bounce 1.12s ease infinite 0.88s;
+}
+.el-13 {
+  animation: bounce 1.12s ease infinite 0.96s;
+  -webkit-animation: bounce 1.12s ease infinite 0.96s;
+}
+.el-14 {
+  animation: bounce 1.12s ease infinite 1.04s;
+  -webkit-animation: bounce 1.12s ease infinite 1.04s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-45px);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 0.95) translateY(0);
+  }
+  65% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+  }
+  75% {
+    -webkit-transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+  }
+}
+
+@-moz-keyframes bounce {
+  0% {
+    -moz-transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -moz-transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -moz-transform: scale(0.9, 1.1) translateY(-45px);
+  }
+  50% {
+    -moz-transform: scale(1.05, 0.95) translateY(0);
+  }
+  65% {
+    -moz-transform: scale(1, 1) translateY(-7px);
+  }
+  75% {
+    -moz-transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -moz-transform: scale(1, 1) translateY(0);
+  }
+}
+
+@-o-keyframes bounce {
+  0% {
+    -o-transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -o-transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -o-transform: scale(0.9, 1.1) translateY(-45px);
+  }
+  50% {
+    -o-transform: scale(1.05, 0.95) translateY(0);
+  }
+  65% {
+    -o-transform: scale(1, 1) translateY(-7px);
+  }
+  75% {
+    -o-transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -o-transform: scale(1, 1) translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-45px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  65% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  75% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+/*  Extra Small screen  */
+@media (max-width: 575px) {
+  body {
+    font-size: 3.5vw !important;
+  }
+}
+/*  Small screen  */
+@media (min-width: 576px) and (max-width: 767px) {
+  body {
+    font-size: 17px !important;
+  }
+}
+/*  Medium screen  */
+@media (min-width: 768px) {
+  body {
+    font-size: 20px !important;
+  }
+}
+/*  Large screen  */
+@media (min-width: 992px) {
+  body {
+    font-size: 24px !important;
+  }
+}
+/*  Extra large screen  */
+@media (min-width: 1200px) {
+  body {
+    font-size: 27px !important;
+  }
+}
+/*  Extra extra large screen  */
+@media (min-width: 1400px) {
+  body {
+    font-size: 30px !important;
+  }
+}

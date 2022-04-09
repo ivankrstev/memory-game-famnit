@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("./font/PressStart2P-Regular.ttf");
+}
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  min-height: 100% !important;
+}
+body {
+  font-family: "Press Start 2P";
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+* {
+  font-family: "Press Start 2P";
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+#reset-game {
+  font-size: 0.7em;
+  background-color: #0d6efd;
+  padding: 0.6em 1em;
+  border-radius: 7px;
+  border: 0;
+  -o-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#reset-game:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px #0d6efd;
+}
+
+#timer {
+  margin-top: 0.6em;
+  font-size: 1em;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.card {
+  cursor: pointer;
+  padding: 0;
+  height: auto;
+  background-color: rgb(179, 240, 240);
+  margin: 3px !important;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 0.3s linear !important;
+  z-index: 1;
+  border-radius: 5px;
+  border: none;
+}
+
+.flip {
+  border-radius: 5px;
+  transition: box-shadow 0.175s linear !important;
+  position: absolute;
+  min-width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.flip-front {
+  font-size: 0.8em !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.flip.flip-back {
+  position: relative;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* I will use this with Javascript to check which cards are flipped */
+.flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+footer {
+  font-size: 0.55em;
+  padding: 0.5em 0;
+  width: 100%;
+  height: auto;
+}
+
+/*  Extra Small screen  */
+@media (max-width: 575px) {
+  body {
+    font-size: 3.5vw !important;
+  }
+  .card {
+    width: 24%;
+  }
+}
+/*  Small screen  */
+@media (min-width: 576px) and (max-width: 767px) {
+  body {
+    font-size: 17px !important;
+  }
+  .card {
+    width: 24%;
+  }
+}
+/*  Medium screen  */
+@media (min-width: 768px) {
+  body {
+    font-size: 20px !important;
+  }
+  .card {
+    width: 18% !important;
+  }
+}
+/*  Large screen  */
+@media (min-width: 992px) {
+  body {
+    font-size: 23px !important;
+  }
+  .card {
+    width: 15% !important;
+  }
+}
+/*  Extra large screen  */
+@media (min-width: 1200px) {
+  body {
+    font-size: 26px !important;
+  }
+  .card {
+    width: 14% !important;
+  }
+}
+/*  Extra extra large screen  */
+@media (min-width: 1400px) {
+  body {
+    font-size: 29px !important;
+  }
+  .card {
+    width: 13% !important;
+  }
+}
