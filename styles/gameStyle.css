@@ -60,6 +60,8 @@ img {
   -moz-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
+  min-width: 100% !important;
+  min-height: 100% !important;
 }
 
 .card {
@@ -68,13 +70,17 @@ img {
   height: auto;
   background-color: rgb(179, 240, 240);
   margin: 3px !important;
-  position: relative;
+  /* position: relative; */
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  transition: all 0.3s linear !important;
+  transition: all 0.25s linear !important;
   z-index: 1;
   border-radius: 5px;
   border: none;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px 2px #0d6efd;
 }
 
 .flip {
@@ -121,6 +127,16 @@ img {
 
 /* I will use this with Javascript to check which cards are flipped */
 .flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.match {
+  cursor: default !important;
+  box-shadow: none !important;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
