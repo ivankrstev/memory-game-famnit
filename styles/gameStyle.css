@@ -134,7 +134,7 @@ img {
   -moz-transform: rotateY(180deg);
 }
 
-.match {
+.card.match {
   cursor: default !important;
   box-shadow: none !important;
   transform: rotateY(180deg);
