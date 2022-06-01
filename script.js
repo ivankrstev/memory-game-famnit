@@ -5,6 +5,8 @@ const shuffleCards = () => {
   }
 };
 
+shuffleCards();
+
 let time = 0;
 let intervalId = 0;
 const countTime = () => {
@@ -67,14 +69,12 @@ cards.forEach((e) => {
 });
 
 document.querySelector("#reset-game").addEventListener("click", () => {
-  clearInterval(intervalId);
-  time = 0;
-  document.getElementById("timer").innerText = "Timer: 00:00";
   cards.forEach((e) => {
     e.className = "card";
     e.removeAttribute("disabled");
   });
-  shuffleCards();
+  clearInterval(intervalId);
+  time = 0;
+  document.getElementById("timer").innerText = "Timer: 00:00";
+  setTimeout(() => shuffleCards(), 300);
 });
-
-shuffleCards();
