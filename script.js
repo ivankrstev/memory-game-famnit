@@ -1,11 +1,10 @@
+const cards = document.querySelectorAll(".game button");
 const shuffleCards = () => {
   const game = document.querySelector(".game");
   for (let i = 0; i < cards.length; i++) {
     game.appendChild(cards[Math.floor(Math.random() * 18)]);
   }
 };
-
-shuffleCards();
 
 let time = 0;
 let intervalId = 0;
@@ -30,7 +29,6 @@ const countTime = () => {
   }, 1000);
 };
 
-const cards = document.querySelectorAll(".game button");
 cards.forEach((e) => {
   e.addEventListener("click", () => {
     if (time === 0) countTime();
@@ -78,3 +76,5 @@ document.querySelector("#reset-game").addEventListener("click", () => {
   document.getElementById("timer").innerText = "Timer: 00:00";
   setTimeout(() => shuffleCards(), 300);
 });
+
+shuffleCards();
